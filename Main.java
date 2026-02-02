@@ -141,7 +141,7 @@ public class Main {
         */
 
         //Resuelve ejercicio 9
-
+        /*
         Producto listaProductos[]=new Producto[3];
 
         listaProductos[0]= new Producto("Pan", 1.80);
@@ -156,12 +156,27 @@ public class Main {
 
         for(int i=0;i< listaProductos.length;i++){
             if(listaProductos[i].getPrecio()>precioMaximo){
-                System.out.println("Productos: "+listaProductos[i]);
+                System.out.println("Productos: "+listaProductos[i].getNombre());
+            }
+        }
+        */
+
+        //Resuelve ejercicio 10
+
+        Producto listaProductos[]=new Producto[3];
+
+        listaProductos[0]= new Producto("Pan", 1.80);
+        listaProductos[1]= new Producto("Leche", 1.20);
+        listaProductos[2]= new Producto("Bocadillo Jamon", 1.45);
+
+        Producto productoMasCaro=listaProductos[0];
+        for(int i=1;i< listaProductos.length;i++){
+            if(listaProductos[i].getPrecio()> productoMasCaro.getPrecio()){
+                productoMasCaro=listaProductos[i];
             }
         }
 
-
-
+        System.out.println("El producto mas caro es: "+productoMasCaro.getNombre()+"\nPrecio: "+productoMasCaro.getPrecio());
 
     }
 }
