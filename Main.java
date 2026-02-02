@@ -90,6 +90,77 @@ public class Main {
         }
         */
 
+        //Resuelve ejercicio 6
+        /*
+        Jugador listaJugadores[]=new Jugador[4];
+
+        listaJugadores[0]=new Jugador("A", 50);
+        listaJugadores[1]=new Jugador("B", 40);
+        listaJugadores[2]=new Jugador("C", 0);
+        listaJugadores[3]=new Jugador("D", 75);
+
+        for(int i=0;i< listaJugadores.length;i++){
+            if(listaJugadores[i].getVida()>0){
+                System.out.println("Jugador: "+listaJugadores[i].getNombre()+" esta vivo.");
+            }
+        }
+        */
+
+        //Resuelve ejercicio 7
+        /*
+        Jugador listaJugadores[]=new Jugador[4];
+
+        listaJugadores[0]=new Jugador("A", 50);
+        listaJugadores[1]=new Jugador("B", 40);
+        listaJugadores[2]=new Jugador("C", 0);
+        listaJugadores[3]=new Jugador("D", 0);
+
+        int jugadoresMuertos=0;
+
+        for(int i=0;i< listaJugadores.length;i++){
+            if(listaJugadores[i].getVida()<=0){
+                jugadoresMuertos++;
+            }
+        }
+        System.out.println("Jugadores muertos: "+jugadoresMuertos);
+        */
+
+        //Resuelve ejercicio 8
+        /*
+        Jugador listaJugadores[]=new Jugador[4];
+
+        listaJugadores[0]=new Jugador("A", 50);
+        listaJugadores[1]=new Jugador("B", 40);
+        listaJugadores[2]=new Jugador("C", 0);
+        listaJugadores[3]=new Jugador("D", 0);
+
+        for(int i=0;i< listaJugadores.length;i++){
+            listaJugadores[i].recibirDano();
+            listaJugadores[i].mostrarDatos();
+        }
+        */
+
+        //Resuelve ejercicio 9
+
+        Producto listaProductos[]=new Producto[3];
+
+        listaProductos[0]= new Producto("Pan", 1.80);
+        listaProductos[1]= new Producto("Leche", 1.20);
+        listaProductos[2]= new Producto("Bocadillo Jamon", 1.45);
+
+        Scanner sc= new Scanner(System.in);
+
+        System.out.println("Introduce un precio maximo: ");
+        double precioMaximo= sc.nextDouble();
+
+
+        for(int i=0;i< listaProductos.length;i++){
+            if(listaProductos[i].getPrecio()>precioMaximo){
+                System.out.println("Productos: "+listaProductos[i]);
+            }
+        }
+
+
 
 
     }
