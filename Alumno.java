@@ -16,7 +16,7 @@ public class Alumno {
         return this.nota;
     }
 
-    public String getNOmbre(){
+    public String getNombre(){
         return this.nombre;
     }
 }
